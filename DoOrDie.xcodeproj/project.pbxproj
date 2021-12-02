@@ -9,21 +9,47 @@
 /* Begin PBXBuildFile section */
 		1607839B274E730F007B598B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1607839A274E730F007B598B /* AppDelegate.swift */; };
 		1607839D274E730F007B598B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1607839C274E730F007B598B /* SceneDelegate.swift */; };
-		1607839F274E730F007B598B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1607839E274E730F007B598B /* ViewController.swift */; };
 		160783A2274E730F007B598B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 160783A0274E730F007B598B /* Main.storyboard */; };
 		160783A4274E7310007B598B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 160783A3274E7310007B598B /* Assets.xcassets */; };
 		160783A7274E7310007B598B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 160783A5274E7310007B598B /* LaunchScreen.storyboard */; };
+		16BB91B92753697600FD3776 /* CategoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BB91B82753697600FD3776 /* CategoryListViewController.swift */; };
+		16BB91BB275369A200FD3776 /* CategoryListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16BB91BA275369A200FD3776 /* CategoryListViewController.storyboard */; };
+		16BB91C127536BAF00FD3776 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BB91C027536BAF00FD3776 /* Category.swift */; };
+		16BB91C327536CA900FD3776 /* CategoryListSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BB91C227536CA900FD3776 /* CategoryListSetup.swift */; };
+		16BB91C527536D4C00FD3776 /* CategoryListViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BB91C427536D4C00FD3776 /* CategoryListViewDataSource.swift */; };
+		16BB91C727536D9300FD3776 /* CategoryListViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BB91C627536D9300FD3776 /* CategoryListViewDelegate.swift */; };
+		16BB91C9275371F700FD3776 /* CategoryListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BB91C8275371F700FD3776 /* CategoryListCell.swift */; };
+		16BB91F52753A97500FD3776 /* CategoryListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16BB91F42753A97500FD3776 /* CategoryListCell.xib */; };
+		16BB91FF2753B42700FD3776 /* CategoryListCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BB91FE2753B42700FD3776 /* CategoryListCellDelegate.swift */; };
+		16BB92012753B48C00FD3776 /* CategoryListViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BB92002753B48C00FD3776 /* CategoryListViewCellDelegate.swift */; };
+		16C82E1327587F1200A8E40B /* CategoryListCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C82E1127587F1200A8E40B /* CategoryListCell2.swift */; };
+		16C82E1427587F1200A8E40B /* CategoryListCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16C82E1227587F1200A8E40B /* CategoryListCell2.xib */; };
+		16C82E162758B3B300A8E40B /* CategoryListViewControllerAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C82E152758B3B300A8E40B /* CategoryListViewControllerAction.swift */; };
+		16C82E182758F4EB00A8E40B /* CategoryListCell2Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C82E172758F4EB00A8E40B /* CategoryListCell2Delegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		16078397274E730F007B598B /* DoOrDie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoOrDie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1607839A274E730F007B598B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1607839C274E730F007B598B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1607839E274E730F007B598B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		160783A1274E730F007B598B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		160783A3274E7310007B598B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		160783A6274E7310007B598B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		160783A8274E7310007B598B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16BB91B82753697600FD3776 /* CategoryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListViewController.swift; sourceTree = "<group>"; };
+		16BB91BA275369A200FD3776 /* CategoryListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CategoryListViewController.storyboard; sourceTree = "<group>"; };
+		16BB91C027536BAF00FD3776 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		16BB91C227536CA900FD3776 /* CategoryListSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListSetup.swift; sourceTree = "<group>"; };
+		16BB91C427536D4C00FD3776 /* CategoryListViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListViewDataSource.swift; sourceTree = "<group>"; };
+		16BB91C627536D9300FD3776 /* CategoryListViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListViewDelegate.swift; sourceTree = "<group>"; };
+		16BB91C8275371F700FD3776 /* CategoryListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListCell.swift; sourceTree = "<group>"; };
+		16BB91F42753A97500FD3776 /* CategoryListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryListCell.xib; sourceTree = "<group>"; };
+		16BB91FE2753B42700FD3776 /* CategoryListCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListCellDelegate.swift; sourceTree = "<group>"; };
+		16BB92002753B48C00FD3776 /* CategoryListViewCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListViewCellDelegate.swift; sourceTree = "<group>"; };
+		16C82E1127587F1200A8E40B /* CategoryListCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListCell2.swift; sourceTree = "<group>"; };
+		16C82E1227587F1200A8E40B /* CategoryListCell2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryListCell2.xib; sourceTree = "<group>"; };
+		16C82E152758B3B300A8E40B /* CategoryListViewControllerAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListViewControllerAction.swift; sourceTree = "<group>"; };
+		16C82E172758F4EB00A8E40B /* CategoryListCell2Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListCell2Delegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +66,11 @@
 		1607838E274E730F007B598B = {
 			isa = PBXGroup;
 			children = (
-				160783AE274E7315007B598B /* CategoryViewController */,
+				16BB91BF27536B9000FD3776 /* New Group */,
+				164B717E2750BA5900C9A6BE /* AppDelegate */,
+				16BB91BC275369EC00FD3776 /* View */,
+				162E7B5427506BF3008F6B89 /* Model */,
+				160783A3274E7310007B598B /* Assets.xcassets */,
 				16078399274E730F007B598B /* DoOrDie */,
 				16078398274E730F007B598B /* Products */,
 			);
@@ -57,22 +87,87 @@
 		16078399274E730F007B598B /* DoOrDie */ = {
 			isa = PBXGroup;
 			children = (
-				1607839A274E730F007B598B /* AppDelegate.swift */,
-				1607839C274E730F007B598B /* SceneDelegate.swift */,
-				1607839E274E730F007B598B /* ViewController.swift */,
-				160783A0274E730F007B598B /* Main.storyboard */,
-				160783A3274E7310007B598B /* Assets.xcassets */,
 				160783A5274E7310007B598B /* LaunchScreen.storyboard */,
 				160783A8274E7310007B598B /* Info.plist */,
 			);
 			path = DoOrDie;
 			sourceTree = "<group>";
 		};
-		160783AE274E7315007B598B /* CategoryViewController */ = {
+		160783AE274E7315007B598B /* CategoryListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				16BB91BE27536B8400FD3776 /* Extension */,
+				16BB91B82753697600FD3776 /* CategoryListViewController.swift */,
+				16BB91BA275369A200FD3776 /* CategoryListViewController.storyboard */,
+			);
+			path = CategoryListViewController;
+			sourceTree = "<group>";
+		};
+		162E7B5427506BF3008F6B89 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				16BB91C027536BAF00FD3776 /* Category.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		164B717E2750BA5900C9A6BE /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				1607839A274E730F007B598B /* AppDelegate.swift */,
+				1607839C274E730F007B598B /* SceneDelegate.swift */,
+				160783A0274E730F007B598B /* Main.storyboard */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		16BB91BC275369EC00FD3776 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				16C82E1027587D7900A8E40B /* CategoryListCell2 */,
+				16BB91BD27536A0E00FD3776 /* CategoryListCell */,
+				160783AE274E7315007B598B /* CategoryListViewController */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		16BB91BD27536A0E00FD3776 /* CategoryListCell */ = {
+			isa = PBXGroup;
+			children = (
+				16BB91C8275371F700FD3776 /* CategoryListCell.swift */,
+				16BB91F42753A97500FD3776 /* CategoryListCell.xib */,
+				16BB91FE2753B42700FD3776 /* CategoryListCellDelegate.swift */,
+			);
+			path = CategoryListCell;
+			sourceTree = "<group>";
+		};
+		16BB91BE27536B8400FD3776 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				16BB91C227536CA900FD3776 /* CategoryListSetup.swift */,
+				16C82E152758B3B300A8E40B /* CategoryListViewControllerAction.swift */,
+				16BB91C427536D4C00FD3776 /* CategoryListViewDataSource.swift */,
+				16BB91C627536D9300FD3776 /* CategoryListViewDelegate.swift */,
+				16BB92002753B48C00FD3776 /* CategoryListViewCellDelegate.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		16BB91BF27536B9000FD3776 /* New Group */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = CategoryViewController;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		16C82E1027587D7900A8E40B /* CategoryListCell2 */ = {
+			isa = PBXGroup;
+			children = (
+				16C82E1127587F1200A8E40B /* CategoryListCell2.swift */,
+				16C82E1227587F1200A8E40B /* CategoryListCell2.xib */,
+				16C82E172758F4EB00A8E40B /* CategoryListCell2Delegate.swift */,
+			);
+			path = CategoryListCell2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,7 +228,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16C82E1427587F1200A8E40B /* CategoryListCell2.xib in Resources */,
 				160783A7274E7310007B598B /* LaunchScreen.storyboard in Resources */,
+				16BB91F52753A97500FD3776 /* CategoryListCell.xib in Resources */,
+				16BB91BB275369A200FD3776 /* CategoryListViewController.storyboard in Resources */,
 				160783A4274E7310007B598B /* Assets.xcassets in Resources */,
 				160783A2274E730F007B598B /* Main.storyboard in Resources */,
 			);
@@ -146,9 +244,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1607839F274E730F007B598B /* ViewController.swift in Sources */,
 				1607839B274E730F007B598B /* AppDelegate.swift in Sources */,
+				16BB91C327536CA900FD3776 /* CategoryListSetup.swift in Sources */,
+				16BB91C527536D4C00FD3776 /* CategoryListViewDataSource.swift in Sources */,
+				16BB91C9275371F700FD3776 /* CategoryListCell.swift in Sources */,
+				16C82E162758B3B300A8E40B /* CategoryListViewControllerAction.swift in Sources */,
 				1607839D274E730F007B598B /* SceneDelegate.swift in Sources */,
+				16BB91FF2753B42700FD3776 /* CategoryListCellDelegate.swift in Sources */,
+				16BB91B92753697600FD3776 /* CategoryListViewController.swift in Sources */,
+				16BB91C127536BAF00FD3776 /* Category.swift in Sources */,
+				16C82E1327587F1200A8E40B /* CategoryListCell2.swift in Sources */,
+				16BB91C727536D9300FD3776 /* CategoryListViewDelegate.swift in Sources */,
+				16C82E182758F4EB00A8E40B /* CategoryListCell2Delegate.swift in Sources */,
+				16BB92012753B48C00FD3776 /* CategoryListViewCellDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryListCell" rowHeight="252" id="VF5-Pv-AtM" customClass="CategoryListCell" customModule="DoOrDie" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="555" height="252"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VF5-Pv-AtM" id="wbc-Pk-Bgq">
+                <rect key="frame" x="0.0" y="0.0" width="555" height="252"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fIZ-Yg-Hsz">
+                        <rect key="frame" x="0.0" y="0.0" width="555" height="252"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kvF-SN-h4l">
+                                <rect key="frame" x="0.0" y="0.0" width="555" height="94"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1re-vG-cH7">
+                                        <rect key="frame" x="8" y="37" width="489.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UFC-9v-4iw">
+                                        <rect key="frame" x="505.5" y="8" width="41.5" height="78"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="arrowtriangle.backward.fill" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="collapseOrExpand:" destination="VF5-Pv-AtM" eventType="touchUpInside" id="JNg-1m-tfZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="UFC-9v-4iw" firstAttribute="leading" secondItem="1re-vG-cH7" secondAttribute="trailing" constant="8" id="4Mn-ex-gdB"/>
+                                    <constraint firstItem="1re-vG-cH7" firstAttribute="leading" secondItem="kvF-SN-h4l" secondAttribute="leading" constant="8" id="BLX-PG-I2g"/>
+                                    <constraint firstAttribute="bottom" secondItem="UFC-9v-4iw" secondAttribute="bottom" constant="8" id="JL0-t8-mZP"/>
+                                    <constraint firstItem="UFC-9v-4iw" firstAttribute="top" secondItem="kvF-SN-h4l" secondAttribute="top" constant="8" id="Qnd-vI-PLm"/>
+                                    <constraint firstItem="UFC-9v-4iw" firstAttribute="centerY" secondItem="1re-vG-cH7" secondAttribute="centerY" id="bT4-pd-84k"/>
+                                    <constraint firstAttribute="trailing" secondItem="UFC-9v-4iw" secondAttribute="trailing" constant="8" id="sjF-e5-VIv"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="1Uh-IL-EQi">
+                                <rect key="frame" x="16" y="94" width="539" height="158"/>
+                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="158" id="3ZG-Qf-XaJ"/>
+                                </constraints>
+                            </tableView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="1Uh-IL-EQi" firstAttribute="leading" secondItem="fIZ-Yg-Hsz" secondAttribute="leading" constant="16" id="BJt-w8-m4h"/>
+                            <constraint firstItem="1Uh-IL-EQi" firstAttribute="top" secondItem="kvF-SN-h4l" secondAttribute="bottom" id="fxn-2h-C9W"/>
+                            <constraint firstAttribute="trailing" secondItem="1Uh-IL-EQi" secondAttribute="trailing" id="gRn-Kq-E9J"/>
+                            <constraint firstAttribute="bottom" secondItem="1Uh-IL-EQi" secondAttribute="bottom" id="weO-bq-nS6"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fIZ-Yg-Hsz" firstAttribute="leading" secondItem="wbc-Pk-Bgq" secondAttribute="leading" id="BCJ-L4-ZvT"/>
+                    <constraint firstItem="fIZ-Yg-Hsz" firstAttribute="top" secondItem="wbc-Pk-Bgq" secondAttribute="top" id="WR0-xH-Zy3"/>
+                    <constraint firstAttribute="bottom" secondItem="fIZ-Yg-Hsz" secondAttribute="bottom" id="cs0-4F-UK8"/>
+                    <constraint firstAttribute="trailing" secondItem="fIZ-Yg-Hsz" secondAttribute="trailing" id="tRD-KL-O86"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="containerView" destination="fIZ-Yg-Hsz" id="cd5-WP-zLb"/>
+                <outlet property="disclosureButton" destination="UFC-9v-4iw" id="mUN-mI-zEr"/>
+                <outlet property="subCategoryListView" destination="1Uh-IL-EQi" id="Uaj-zH-gr8"/>
+                <outlet property="subCategoryListViewHeight" destination="3ZG-Qf-XaJ" id="dp4-nI-2m5"/>
+                <outlet property="titleLabel" destination="1re-vG-cH7" id="gNr-0o-bOw"/>
+            </connections>
+            <point key="canvasLocation" x="2.1739130434782612" y="125.89285714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrowtriangle.backward.fill" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

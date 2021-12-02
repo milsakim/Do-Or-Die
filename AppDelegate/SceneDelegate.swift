@@ -47,6 +47,56 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
     }
 
+    func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
+        print("scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>)")
+        
+        /*
+        if window == nil {
+            print("window nil")
+        }
+        
+        guard let navigationController = window?.rootViewController as? UINavigationController else {
+            print("fail to get nav controlelr")
+            return
+        }
 
+        guard let rvc: ViewController = navigationController.viewControllers[0] as? ViewController else {
+            print("fail1")
+            return
+        }
+        guard let url: URL = URLContexts.first?.url else {
+            print("fail2")
+            return
+        }
+        
+        print(url)
+        
+        do {
+            let fileManage: FileManager = FileManager.default
+            let documentsURL: URL = try fileManage.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
+            var destinationURL: URL = documentsURL.appendingPathComponent(url.lastPathComponent)
+            
+            if fileManage.fileExists(atPath: destinationURL.path) {
+                print("\(destinationURL.lastPathComponent) exist")
+                
+                var count: Int = 1
+                
+                while fileManage.fileExists(atPath: destinationURL.path + " (\(count))") {
+                    count += 1
+                }
+                
+                destinationURL = documentsURL.appendingPathComponent(url.lastPathComponent + " (\(count))")
+            }
+            
+            try fileManage.copyItem(at: url, to: destinationURL)
+            
+            rvc.displayText(url: destinationURL)
+        }
+        catch {
+            print("fail3")
+            return
+        }
+        */
+    }
 }
 
