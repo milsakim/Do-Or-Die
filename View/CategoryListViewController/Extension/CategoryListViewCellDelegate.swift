@@ -49,9 +49,24 @@ extension CategoryListViewController {
     func expand(_ indexPath: IndexPath) -> [IndexPath] {
         let c1 = categories[0...indexPath.row]
         let c2 = categories[(indexPath.row + 1)...]
-        categories = c1 + categories[indexPath.row].subcategories + c2
         
-        return ((indexPath.row + 1)..<(indexPath.row + 1 + categories[indexPath.row].subcategories.count)).map { IndexPath(row: $0, section: indexPath.section) }
+        var stack: [Category] = categories[indexPath.row].subcategories.reversed()
+        var willAdded: [Category] = []
+        
+        while !stack.isEmpty {
+            let currentCategory: Category = stack.removeLast()
+            willAdded.append(currentCategory)
+            
+            if currentCategory.isExpaned {
+                stack += currentCategory.subcategories.reversed()
+            }
+        }
+        
+//        categories = c1 + categories[indexPath.row].subcategories + c2
+        categories = c1 + willAdded + c2
+        
+//        return ((indexPath.row + 1)..<(indexPath.row + 1 + categories[indexPath.row].subcategories.count)).map { IndexPath(row: $0, section: indexPath.section) }
+        return ((indexPath.row + 1)..<(indexPath.row + 1 + willAdded.count)).map { IndexPath(row: $0, section: indexPath.section) }
     }
     
     func collapse(_ indexPath: IndexPath) -> [IndexPath] {
@@ -66,7 +81,7 @@ extension CategoryListViewController {
             
             if currentCategory.isExpaned {
                 queue += currentCategory.subcategories
-                currentCategory.isExpaned = false
+//                currentCategory.isExpaned = false
             }
         }
 
