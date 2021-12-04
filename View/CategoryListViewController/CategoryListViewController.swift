@@ -15,7 +15,9 @@ class CategoryListViewController: UIViewController {
     
     let categoryListCellID: String = "CategoryListCell"
     
-    var categories: [Category] = []
+    var categories: [Category] = [] 
+    
+    var currentSelected: IndexPath?
     
     // MARK: - View Life Cycle
     
