@@ -46,6 +46,9 @@ class CategoryListCell2: UITableViewCell {
             subcategoryButton.setImage( UIImage(systemName: "arrowtriangle.right"), for: .normal)
         }
         
+        if category.subcategories.isEmpty {
+            subcategoryButton.isHidden = true
+        }
         titleLabel.text = category.title
         
         countLabel.text = "\(category.subcategories.count)"
