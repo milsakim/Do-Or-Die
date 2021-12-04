@@ -29,9 +29,26 @@ extension CategoryListViewController {
             let title: String? = text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty ? nil : text.trimmingCharacters(in: .whitespacesAndNewlines)
             
             // Add new category
-            self.categories.append(Category(title: title))
+            guard let current = self.currentSelected else { return }
+            let newCategory = Category(title: title)
+            newCategory.level = self.categories[current.row].level + 1
+            
+            var willInsert: [IndexPath] = []
+            
+            if !self.categories[current.row].isExpaned {
+                willInsert += self.expand(current)
+                self.categories[current.row].isExpaned = true
+            }
+            
+            self.categories[current.row].subcategories.append(newCategory)
+            self.categories.insert(newCategory, at: current.row + self.categories[current.row].subcategories.count)
+            
+            willInsert += [IndexPath(row: current.row + self.categories[current.row].subcategories.count, section: current.section)]
+            self.categoryListView.insertRows(at: willInsert, with: .fade)
+            self.categoryListView.reloadRows(at: [current], with: .none)
+//            self.categories.append(Category(title: title))
             // Reload table view
-            self.categoryListView.reloadData()
+//            self.categoryListView.reloadData()
         })
         alertController.addAction(addAction)
         
