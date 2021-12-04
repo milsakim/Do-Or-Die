@@ -49,6 +49,10 @@ class CategoryListCell2: UITableViewCell {
         if category.subcategories.isEmpty {
             subcategoryButton.isHidden = true
         }
+        else {
+            subcategoryButton.isHidden = false
+        }
+        
         titleLabel.text = category.title
         
         countLabel.text = "\(category.subcategories.count)"
