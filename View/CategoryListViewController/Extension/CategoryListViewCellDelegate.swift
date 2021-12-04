@@ -55,16 +55,22 @@ extension CategoryListViewController {
     }
     
     func collapse(_ indexPath: IndexPath) -> [IndexPath] {
-        var numberOfSubcategories: Int = categories[indexPath.row].subcategories.count
-        let c1 = categories[0...indexPath.row]
+        var numberOfSubcategories: Int = 0
         
-        categories[indexPath.row].subcategories.forEach {
-            if $0.isExpaned {
-                numberOfSubcategories += $0.subcategories.count
-                $0.isExpaned = false
+        var queue: [Category] = categories[indexPath.row].subcategories
+        
+        while !queue.isEmpty {
+            let currentCategory: Category = queue.removeFirst()
+            print(currentCategory.title)
+            numberOfSubcategories += 1
+            
+            if currentCategory.isExpaned {
+                queue += currentCategory.subcategories
+                currentCategory.isExpaned = false
             }
         }
-        
+
+        let c1 = categories[0...indexPath.row]
         let c2 = categories[(indexPath.row + 1 + numberOfSubcategories)...]
         categories = Array(c1 + c2)
         
