@@ -44,15 +44,20 @@ extension CategoryListViewController {
             self.categories.insert(newCategory, at: current.row + self.categories[current.row].subcategories.count)
             
             willInsert += [IndexPath(row: current.row + self.categories[current.row].subcategories.count, section: current.section)]
+            
             self.categoryListView.insertRows(at: willInsert, with: .fade)
             self.categoryListView.reloadRows(at: [current], with: .none)
-//            self.categories.append(Category(title: title))
-            // Reload table view
-//            self.categoryListView.reloadData()
+            
+            self.currentSelected = IndexPath(row: current.row + self.categories[current.row].subcategories.count, section: current.section)
+            self.categoryListView.selectRow(at: self.currentSelected, animated: true, scrollPosition: .middle)
         })
         alertController.addAction(addAction)
         
         present(alertController, animated: true, completion: nil)
+    }
+    
+    func updateCurrentSelected() {
+        
     }
 
 }
